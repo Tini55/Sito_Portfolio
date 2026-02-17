@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formazione Francesca Cantini</title>
+  <link rel="icon" type="image/x-icon" href="assets/immagini/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/slyle.css" />
+  <link rel="stylesheet" href="assets/formazione.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-logo">FC.</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="progetto.html" class="nav-link">Progetti</a>
+      <a href="lavoro.html" class="nav-link">Lavoro</a>
+      <a href="formazione.html" class="nav-link active">Formazione</a>
+      <a href="contatti.html" class="nav-link">Contatti</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+    </button>
+  </header>
+
+  <!-- Overlay mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="index.html#prodotti" class="mobile-link">Prodotti</a>
+    <a href="index.html#lavoro" class="mobile-link">Lavoro</a>
+    <a href="formazione.html" class="mobile-link">Formazione</a>
+    <a href="index.html#contatti" class="mobile-link">Contatti</a>
+  </div>
+
+  <!-- ===== HERO FORMAZIONE ===== -->
+  <section class="form-hero">
+    <div class="form-hero-text">
+      <h1>Il mio percorso non è una retta,<br />è una <span class="accent italic">stratificazione.</span></h1>
+      <p>Ogni esperienza passata aggiunge un livello di profondità alla mia visione progettuale, unendo rigore scientifico, sensibilità estetica e innovazione tecnologica.</p>
+    </div>
+  </section>
+
+  <!-- ===== TIMELINE ===== -->
+  <section class="timeline-section">
+
+    <!-- ---- CARD 1: Start2impact ---- -->
+    <div class="timeline-item reverse">
+      <div class="timeline-card">
+        <span class="card-tag completato">Completato</span>
+        <h2 class="card-title">Start2impact: UX/UI design</h2>
+        <p class="card-dates">2020 – 2026</p>
+        <p class="card-desc">Percorso formativo completo focalizzato sulle metodologie di design centrato sull'utente e sullo sviluppo di interfacce digitali.</p>
+
+        <div class="card-section-label">Moduli ed Esami</div>
+        <p class="card-modules">Grafica, Copywriting, Discovery, Accessibility, Wireframing, User Interface, User Test, Design e sviluppo, Html e Css, Maxi progetto finale.</p>
+
+        <div class="card-section-label">Tools &amp; Skills</div>
+        <div class="card-tags-row">
+          <span class="pill">Figma</span>
+          <span class="pill">Stitch.AI</span>
+          <span class="pill">User Research</span>
+          <span class="pill">Design Systems</span>
+          <span class="pill">Prototyping</span>
+          <span class="pill">Accessibility</span>
+          <span class="pill">Visual Studio Code</span>
+        </div>
+      </div>
+      <div class="timeline-connector">
+        <div class="connector-dot blue"></div>
+        <div class="connector-line"></div>
+      </div>
+      <div class="timeline-image">
+        <img src="assets/immagini/Start2impact.jpeg" alt="Start2impact logo" />
+      </div>
+    </div>
+
+    <!-- ---- CARD 2: Accademia ---- -->
+    <div class="timeline-item">
+      <div class="timeline-image">
+        <img src="assets/immagini/Accademia_di_Belle_Arti_di_Bologna.png" alt="Accademia Belle Arti di Bologna lapide infissa all'ingresso" />
+      </div>
+      <div class="timeline-connector">
+        <div class="connector-dot grey"></div>
+        <div class="connector-line"></div>
+      </div>
+      <div class="timeline-card">
+        <span class="card-tag completato">Completato</span>
+        <h2 class="card-title">Accademia di Belle Arti di Bologna</h2>
+        <p class="card-dates">2004 – 2007</p>
+        <p class="card-desc">Diploma Accademico di Restauro e Conservazione dei Beni Culturali, specializzazione in Restauro Ligneo.</p>
+        <p class="card-desc">Un percorso che mi ha insegnato la pazienza, la precisione e l'approccio scientifico alle opere d'arte.</p>
+        <p class="card-vote">
+          <span class="vote-dot"></span>
+          Votazione: 110 con lode
+        </p>
+      </div>
+    </div>
+
+    <!-- ---- CARD 3: Liceo ---- -->
+    <div class="timeline-item reverse">
+      <div class="timeline-card">
+        <span class="card-tag completato">Completato</span>
+        <h2 class="card-title">Liceo scientifico A.E. Agnoletti</h2>
+        <p class="card-dates">1998 – 2003</p>
+        <p class="card-desc">Diploma di Maturità Scientifica, Corso Sperimentale di Fisica.</p>
+        <p class="card-desc">Le fondamenta del mio pensiero analitico. Qui ho imparato a scomporre problemi complessi in componenti semplici. Ha forgiato il mio approccio razionale.</p>
+        <p class="card-vote-plain">Votazione: 80/100</p>
+      </div>
+      <div class="timeline-connector">
+        <div class="connector-dot grey"></div>
+        <div class="connector-line short"></div>
+      </div>
+      <div class="timeline-image">
+        <img src="assets/immagini/Liceo Agnoletti.png" alt="Logo del Liceo scientifico Agnoletti di Sesto Fiorentino" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/francesca-cantini-56582a137" class="social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/Tini55" class="social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">2026 Francesca Cantini.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

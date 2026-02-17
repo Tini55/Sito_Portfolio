@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francesca Cantini UX/UI Designer</title>
+  <link rel="icon" type="image/x-icon" href="assets/immagini/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/slyle.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-logo">FC.</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="progetto.html" class="nav-link">Progetti</a>
+      <a href="lavoro.html" class="nav-link">Lavoro</a>
+      <a href="formazione.html" class="nav-link">Formazione</a>
+      <a href="contatti.html" class="nav-link">Contatti</a>
+    </nav>
+    <!-- Hamburger button (visibile solo mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+    </button>
+  </header>
+
+  <!-- Overlay mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#prodotti" class="mobile-link">Prodotti</a>
+    <a href="#lavoro" class="mobile-link">Lavoro</a>
+    <a href="#formazione" class="mobile-link">Formazione</a>
+    <a href="#contatti" class="mobile-link">Contatti</a>
+    <a href="#" class="btn-primary mobile-btn">Download CV</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="tag">Portfolio 2026</span>
+      <h1 class="hero-name">
+        Francesca<br />
+        <span class="accent">Cantini</span>
+      </h1>
+      <p class="hero-subtitle">UX/UI Designer</p>
+      <div class="hero-cta">
+        <a href="#lavoro" class="btn-primary">Visualizza Progetti</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image-placeholder">
+        <img src="assets/immagini/665E6E87-7229-4F45-9A9C-D8A501ED9DA9_1_201_a.heic" alt="Foto ritratto di Francesca Cantini" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BACKGROUND ===== -->
+  <section class="background" id="background">
+    <div class="bg-left">
+      <span class="tag">Background</span>
+      <h2>Dal retail al<br />Design Digitale.</h2>
+    </div>
+    <div class="bg-right">
+      <p>A 40 anni ho trasformato la mia carriera, passando  <strong>dal commercio al dettaglio alla UX/UI Design</strong> con una forte passione per la<strong> User Research</strong>. Considero la UX il "commercio 3.0": porto con me la <strong>capacità di dialogare con le persone</strong> per capire i loro bisogni reali, affinata in anni di vendita.</p>
+      <p>Il mio approccio unisce una <strong>formazione scientifica</strong> all'amore per i dati, scoperti durante la mia esperienza manageriale e fondamentali per validare le intuizioni. La maternità mi ha offerto il tempo per studiare e riqualificarmi: ora, unendo empatia, metodo e analisi, <strong>sono pronta per questa nuova sfida professionale</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ===== COMPETENZE TECNICHE ===== -->
+  <section class="skills-section" id="prodotti">
+    <span class="tag centered">Competenze Tecniche</span>
+    <h2 class="section-title centered">Il mio arsenale creativo</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M5 5.5A.5.5 0 0 1 5.5 5h13a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-13z"/><path d="m8 8 8 8M16 8l-8 8"/></svg>
+        </div>
+        <h3>Figma</h3>
+        <span class="skill-sub">Prototyping</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Stitch</h3>
+        <span class="skill-sub">3D Design</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+        </div>
+        <h3>Illustrator</h3>
+        <span class="skill-sub">Vector Art</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>
+        </div>
+        <h3>Photoshop</h3>
+        <span class="skill-sub">Editing</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Excel</h3>
+        <span class="skill-sub">Data Analysis</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Keynote</h3>
+        <span class="skill-sub">Presentation</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M13 2v7h7"/></svg>
+        </div>
+        <h3>HTML5</h3>
+        <span class="skill-sub">Structure</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+        </div>
+        <h3>CSS3</h3>
+        <span class="skill-sub">Styling</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOFT SKILLS ===== -->
+  <section class="softskills-section" id="lavoro">
+    <div class="softskills-left">
+      <span class="tag">Soft Skills</span>
+      <h2>Oltre il monitor,<br />l'empatia umana.</h2>
+      <div class="softskill-list">
+        <div class="softskill-item">
+          <span class="softskill-icon">👥</span>
+          <span>Lavoro di Gruppo</span>
+        </div>
+        <div class="softskill-item">
+          <span class="softskill-icon">📍</span>
+          <span>Problem Solving</span>
+        </div>
+        <div class="softskill-item">
+          <span class="softskill-icon">💙</span>
+          <span>People Oriented</span>
+        </div>
+        <div class="softskill-item">
+          <span class="softskill-icon">🚀</span>
+          <span>Produttiva</span>
+        </div>
+      </div>
+    </div>
+    <div class="softskills-right">
+      <div class="softskills-image-wrap">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80&auto=format&fit=crop" alt="Team collaboration" />
+        <div class="softskills-quote-card">
+          <p>"Collaborare significa fondere prospettive diverse per creare un'unica visione straordinaria."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATTI ===== -->
+  <section class="contact-section" id="contatti">
+    <h2>Iniziamo a collaborare?</h2>
+    <p class="contact-subtitle">Sei alla ricerca di una designer che porti anima e precisione ai tuoi progetti? Scrivimi pure.</p>
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="from_name" placeholder="Inserisci il tuo nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="reply_to" placeholder="tua@email.it" required />
+        </div>
+      </div>
+      <div class="form-group full">
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" rows="5" placeholder="Raccontami del tuo progetto..." required></textarea>
+      </div>
+      <button type="submit" class="btn-send" id="send-btn">
+        <span id="btn-text">Invia</span>
+        <span id="btn-spinner" style="display:none">⏳</span>
+      </button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/francesca-cantini-56582a137" class="social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/Tini55" class="social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">2026 Francesca Cantini.</p>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/script.js"></script>
+</body>
+</html>

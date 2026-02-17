@@ -1,0 +1,319 @@
+/* =============================================
+   FORMAZIONE PAGE
+   formazione.css
+   ============================================= */
+
+/* ---- HERO ---- */
+.form-hero {
+  background: var(--bg-light);
+  padding: 80px 48px 60px;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-hero-text {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  animation: fadeSlideUp 0.7s ease both;
+}
+
+.form-hero-text h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.form-hero-text .italic {
+  font-style: italic;
+}
+
+.form-hero-text p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.8;
+}
+
+/* ---- TIMELINE SECTION ---- */
+.timeline-section {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 80px 48px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ---- TIMELINE ITEM ---- */
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  align-items: center;
+  gap: 0;
+  opacity: 0;
+  animation: fadeSlideUp 0.65s ease both;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.25s; }
+.timeline-item:nth-child(3) { animation-delay: 0.4s; }
+
+/* Versione invertita: card a sinistra, immagine a destra */
+.timeline-item.reverse {
+  grid-template-columns: 1fr 60px 1fr;
+}
+
+/* ---- CARD ---- */
+.timeline-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+}
+
+.card-tag.in-corso {
+  background: var(--blue-light);
+  color: var(--blue);
+}
+
+.card-tag.completato {
+  background: #e6f4ea;
+  color: #1e7e34;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.card-dates {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 14px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+
+.card-section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 18px 0 8px;
+}
+
+.card-modules {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.card-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: var(--bg-light);
+  transition: var(--transition);
+}
+
+.pill:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  background: var(--blue-light);
+}
+
+.card-vote {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e7e34;
+  margin-top: 14px;
+}
+
+.vote-dot {
+  width: 10px;
+  height: 10px;
+  background: #1e7e34;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.card-vote-plain {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+/* ---- CONNECTOR ---- */
+.timeline-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.connector-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px currentColor;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.connector-dot.blue {
+  background: var(--blue);
+  color: var(--blue);
+}
+
+.connector-dot.grey {
+  background: #9ca3af;
+  color: #9ca3af;
+}
+
+.connector-line {
+  width: 2px;
+  flex: 1;
+  min-height: 60px;
+  background: linear-gradient(to bottom, var(--border), transparent);
+  margin-top: 8px;
+}
+
+.connector-line.short {
+  min-height: 20px;
+}
+
+/* ---- IMAGE ---- */
+.timeline-image {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.timeline-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.timeline-image:hover img {
+  transform: scale(1.03);
+}
+
+.image-label {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  background: rgba(26, 26, 46, 0.85);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 16px 6px 12px;
+  border-radius: 8px 0 0 8px;
+  backdrop-filter: blur(4px);
+}
+
+/* ============================================
+   RESPONSIVE FORMAZIONE
+   ============================================ */
+@media (max-width: 900px) {
+  .form-hero {
+    padding: 60px 24px 40px;
+  }
+
+  .timeline-section {
+    padding: 48px 24px 60px;
+    gap: 48px;
+  }
+
+  /* Tutto in colonna su mobile */
+  .timeline-item,
+  .timeline-item.reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Immagine sempre in cima */
+  .timeline-item .timeline-image,
+  .timeline-item.reverse .timeline-image {
+    order: 1;
+    width: 100%;
+  }
+
+  .timeline-item .timeline-connector,
+  .timeline-item.reverse .timeline-connector {
+    order: 2;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .connector-line {
+    width: 40px;
+    height: 2px;
+    min-height: unset;
+    flex: unset;
+    margin-top: 0;
+    margin-left: 8px;
+    background: linear-gradient(to right, var(--border), transparent);
+  }
+
+  .timeline-item .timeline-card,
+  .timeline-item.reverse .timeline-card {
+    order: 3;
+    width: 100%;
+  }
+
+  .timeline-image img {
+    height: 200px;
+  }
+}
