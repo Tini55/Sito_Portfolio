@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="assets/progetto.css" />
 </head>
 <body>
-
+ 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="nav-logo">FC.</div>
@@ -29,7 +29,7 @@
       <span class="ham-line"></span>
     </button>
   </header>
-
+ 
   <!-- Overlay mobile menu -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <a href="index.html" class="mobile-link">Home</a>
@@ -38,7 +38,7 @@
     <a href="formazione.html" class="mobile-link">Formazione</a>
     <a href="contatti.html" class="mobile-link">Contatti</a>
   </div>
-
+ 
   <!-- ===== HERO PROGETTI ===== -->
   <section class="progetti-hero">
     <div class="progetti-hero-inner">
@@ -46,11 +46,11 @@
       <p>Una selezione di lavori realizzati durante il percorso formativo presso <strong>Start2impact</strong>, focalizzati sulla risoluzione di problemi reali attraverso il design centrato sull'utente e metodologie UX consolidate.</p>
     </div>
   </section>
-
+ 
   <!-- ===== GRIGLIA PROGETTI ===== -->
   <section class="progetti-grid-section">
     <div class="progetti-grid">
-
+ 
       <!-- Progetto 1 -->
       <div class="project-card">
         <div class="project-image">
@@ -67,7 +67,7 @@
           <button class="btn-case-study" onclick="openModal()">Vedi Case Study <span>+</span></button>
         </div>
       </div>
-
+ 
       <!-- Progetto 2 -->
       <div class="project-card">
         <div class="project-image">
@@ -79,14 +79,31 @@
             <span class="project-pill">Prototyping</span>
             <span class="project-pill">User Test</span>
           </div>
-          <h2 class="project-title">Orto di Sesto</h2>
+          <h2 class="project-title">Orto di Sesto - User Research</h2>
           <p class="project-desc">Progettazione dell'interfaccia UI per un'azienda agricola di Sesto Fiorentino, con focus su storytelling visivo e design responsive.</p>
           <button class="btn-case-study" onclick="openModal2()">Vedi Case Study <span>+</span></button>
         </div>
       </div>
+ 
+      <!-- Progetto 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/immagini/Hero .png" alt="Hero della Home page del sito di Orto di Sesto che mostra un paesaggio toscano." />
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-pill">Prototyping</span>
+            <span class="project-pill">Figma</span>
+          </div>
+          <h2 class="project-title">Orto di Sesto – Sito Responsive</h2>
+          <p class="project-desc">Prototipo responsive del sito web di Orto di Sesto, progettato per garantire un'esperienza ottimale su desktop, tablet e mobile.</p>
+          <button class="btn-case-study" onclick="openModal3()">Vedi Case Study <span>+</span></button>
+        </div>
+      </div>
+ 
     </div>
   </section>
-
+ 
   <!-- ===== CONTATTI ===== -->
   <section class="contact-section" id="contatti">
     <h2>Iniziamo a collaborare?</h2>
@@ -113,7 +130,7 @@
       <p id="form-status" class="form-status"></p>
     </form>
   </section>
-
+ 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-socials">
@@ -126,7 +143,7 @@
     </div>
     <p class="footer-copy">2026 Francesca Cantini.</p>
   </footer>
-
+ 
   <!-- ===== MODAL CASE STUDY MYFOODY ===== -->
   <div class="cs-modal-overlay" id="cs-modal" aria-modal="true" role="dialog" aria-label="Case Study MyFoody">
     <div class="cs-modal-box">
@@ -153,7 +170,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- ===== MODAL CASE STUDY ORTO DI SESTO ===== -->
   <div class="cs-modal-overlay" id="cs-modal-2" aria-modal="true" role="dialog" aria-label="Case Study Orto di Sesto">
     <div class="cs-modal-box">
@@ -179,33 +196,58 @@
       </div>
     </div>
   </div>
-
+ 
+  <!-- ===== MODAL CASE STUDY ORTO DI SESTO RESPONSIVE ===== -->
+  <div class="cs-modal-overlay" id="cs-modal-3" aria-modal="true" role="dialog" aria-label="Case Study Orto di Sesto Responsive">
+    <div class="cs-modal-box">
+      <div class="cs-modal-header">
+        <div class="cs-modal-title">
+          <span class="project-pill">Prototyping</span>
+          <span class="project-pill">Figma</span>
+          <h2>Orto di Sesto – Sito Responsive</h2>
+        </div>
+        <button class="cs-modal-close" onclick="closeModal('cs-modal-3')" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="cs-modal-body">
+        <img src="assets/immagini/Sito Orto di Sesto/UI Orto di Sesto.001.jpeg" alt="Case Study – Cover" />
+        <img src="assets/immagini/Sito Orto di Sesto/UI Orto di Sesto.002.jpeg" alt="Gli Obiettivi" />
+        <img src="assets/immagini/Sito Orto di Sesto/UI Orto di Sesto.003.jpeg" alt="Design System" />
+        <img src="assets/immagini/Sito Orto di Sesto/UI Orto di Sesto.004.jpeg" alt="Homepage" />
+        <img src="assets/immagini/Sito Orto di Sesto/UI Orto di Sesto.005.jpeg" alt="Catalogo Prodotti" />
+        <img src="assets/immagini/Sito Orto di Sesto/UI Orto di Sesto.006.jpeg" alt="Checkout Flow" />
+        <img src="assets/immagini/Sito Orto di Sesto/UI Orto di Sesto.007.jpeg" alt="Versione Mobile" />
+        <img src="assets/immagini/Sito Orto di Sesto/UI Orto di Sesto.008.jpeg" alt="Grazie" />
+      </div>
+    </div>
+  </div>
+ 
   <!-- EmailJS SDK -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="assets/script.js"></script>
   <script>
     function openModal()  { _openModal('cs-modal'); }
     function openModal2() { _openModal('cs-modal-2'); }
-
+    function openModal3() { _openModal('cs-modal-3'); }
+ 
     function _openModal(id) {
       const modal = document.getElementById(id);
       modal.classList.add("open");
       document.body.style.overflow = "hidden";
       modal.querySelector(".cs-modal-body").scrollTop = 0;
     }
-
+ 
     function closeModal(id) {
       document.getElementById(id).classList.remove("open");
       document.body.style.overflow = "";
     }
-
+ 
     // Chiudi cliccando sull'overlay
     document.querySelectorAll(".cs-modal-overlay").forEach(function(modal) {
       modal.addEventListener("click", function(e) {
         if (e.target === this) closeModal(this.id);
       });
     });
-
+ 
     // Chiudi con Escape
     document.addEventListener("keydown", function(e) {
       if (e.key === "Escape") {
@@ -217,3 +259,4 @@
   </script>
 </body>
 </html>
+ 
